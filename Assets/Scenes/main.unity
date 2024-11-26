@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 369117590}
   - component: {fileID: 369117589}
   - component: {fileID: 369117588}
+  - component: {fileID: 369117592}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -295,6 +296,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &369117592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369117587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653ed276bc08f6c488a56f88111c93cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageText: {fileID: 2013837782}
 --- !u!1 &445306366
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,6 +321,7 @@ GameObject:
   - component: {fileID: 445306369}
   - component: {fileID: 445306368}
   - component: {fileID: 445306367}
+  - component: {fileID: 445306371}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -396,12 +411,25 @@ Transform:
   m_GameObject: {fileID: 445306366}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.12, y: 10, z: 15.2}
+  m_LocalPosition: {x: 15.12, y: 5.7, z: 22.2}
   m_LocalScale: {x: 10, y: 5, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &445306371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445306366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ec00cfd523ad940a8032df621edf7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageText: {fileID: 2013837782}
 --- !u!1 &785340895
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,6 +744,7 @@ GameObject:
   - component: {fileID: 1258105554}
   - component: {fileID: 1258105553}
   - component: {fileID: 1258105552}
+  - component: {fileID: 1258105556}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -809,6 +838,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1258105556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258105551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec377b2de3567749a1723120e5c965f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageText: {fileID: 2013837782}
 --- !u!1 &1930779156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1077,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013837780}
   m_CullTransparentMesh: 1
+--- !u!1 &2071116229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071116231}
+  - component: {fileID: 2071116230}
+  m_Layer: 0
+  m_Name: MainManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2071116230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071116229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69214a6d27a82a34d8c724787239d6aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2071116231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071116229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.392443, y: -0.40762353, z: 32.431942}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1047,3 +1133,4 @@ SceneRoots:
   - {fileID: 445306370}
   - {fileID: 1228427389}
   - {fileID: 348197924}
+  - {fileID: 2071116231}
