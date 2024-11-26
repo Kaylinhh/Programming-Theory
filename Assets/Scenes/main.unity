@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 369117589}
   - component: {fileID: 369117588}
   - component: {fileID: 369117592}
+  - component: {fileID: 369117593}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -251,7 +252,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 620bd1c248088894ba4c9c5d07102c67, type: 2}
+  - {fileID: 2100000, guid: 04cc2d3382450f44f95fa9374472e4a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -309,6 +310,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 2013837782}
+--- !u!114 &369117593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369117587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd6dda01c5e89942b88aed3d8fb25f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &445306366
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +335,7 @@ GameObject:
   - component: {fileID: 445306368}
   - component: {fileID: 445306367}
   - component: {fileID: 445306371}
+  - component: {fileID: 445306372}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -372,7 +386,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 298f289572ddd7b4d87530eee01474ad, type: 2}
+  - {fileID: 2100000, guid: 04cc2d3382450f44f95fa9374472e4a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -430,6 +444,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 2013837782}
+--- !u!114 &445306372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445306366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd6dda01c5e89942b88aed3d8fb25f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &785340895
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +771,7 @@ GameObject:
   - component: {fileID: 1258105553}
   - component: {fileID: 1258105552}
   - component: {fileID: 1258105556}
+  - component: {fileID: 1258105557}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -793,7 +820,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a25cdc107c1d2a746b1176334591cd8e, type: 2}
+  - {fileID: 2100000, guid: 04cc2d3382450f44f95fa9374472e4a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -851,6 +878,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 2013837782}
+--- !u!114 &1258105557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258105551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd6dda01c5e89942b88aed3d8fb25f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1930779156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Object description
+  m_text: Click on a shape!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1106,6 +1145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69214a6d27a82a34d8c724787239d6aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cube: {fileID: 369117592}
+  sphere: {fileID: 1258105556}
+  cylinder: {fileID: 445306371}
 --- !u!4 &2071116231
 Transform:
   m_ObjectHideFlags: 0

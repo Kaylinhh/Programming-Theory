@@ -9,6 +9,7 @@ public class Shape : MonoBehaviour
     private Color shapeColor;
     public TextMeshProUGUI messageText;
 
+    //ENCAPSULATION
     public string ShapeName
     {
         get { return shapeName;  }
@@ -42,7 +43,7 @@ public class Shape : MonoBehaviour
     {
         if (messageText != null) 
         {
-            messageText.text = $"I'm a shape named {ShapeName} and I'm {ShapeColor}";
+            messageText.text = $"I'm a shape named {ShapeName}!";
         }
         else 
         {

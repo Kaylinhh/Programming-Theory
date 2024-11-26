@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+//INHERITANCE
 public class Cylinder : Shape
 {
+    //POLYMORPHISM
     public override void DisplayText()
     {
         if (messageText != null) 
